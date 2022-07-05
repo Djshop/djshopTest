@@ -1,4 +1,4 @@
 
 database:
-    type: mariadb:10.4
-    disk: 2048
+    type: postgresql:13
+    disk: 1024

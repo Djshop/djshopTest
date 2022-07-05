@@ -22,12 +22,14 @@ build:
 disk: 512
 
 relationships:
-    database: "database:mariadb"
+    database: "database:postgresql"
 
 web:
     locations:
         "/":
-            passthru: true
+            root: "public"
+            expires: 1h
+            passthru: "/index.php"
 
 
 
